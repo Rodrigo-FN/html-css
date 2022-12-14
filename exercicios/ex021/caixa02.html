@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+
+    <style>
+        * {
+        
+            margin: 0;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: blueviolet;
+        }
+
+        header {
+            width: 80%;
+
+            padding: 10px;
+            margin: 10px auto;
+            background-color: rgb(161, 114, 206);
+
+            text-align: center;
+
+            border-radius: 10px;
+
+            box-shadow: 2px 2px 15px;
+
+        }
+
+        main {
+            
+            height: 600px;
+            width: 80%;
+
+            padding: 10px;
+            margin:  20px auto;
+            background-color: rgb(161, 114, 206);
+            border-radius: 20px 0;
+
+            box-shadow: 2px 2px 15px;
+
+            text-align: justify;
+        }
+
+        h1 {
+            margin: 0 10px 20px 10px;
+            text-align: center;
+            color: rgb(45, 3, 85);
+            font-weight: bolder;
+
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.39);
+        }
+
+        nav {
+            border-radius: 10px;
+            background-color: rgb(45, 3, 85);
+        }
+
+        a {
+            color: rgb(161, 114, 206);
+            text-decoration: none;
+            margin: 30px;
+        }
+
+        h2{
+            margin: 10px 10px 20px 10px;
+            text-align: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.377);
+
+            color: rgb(75, 24, 122);
+        }
+
+        p {
+            margin: 0 10px 20px 10px;
+            text-indent: 30px;
+        }
+
+        p:hover cite {
+            color: aliceblue;
+        }
+
+        p cite {
+            display: block;
+            text-align: right;
+        }
+
+        aside {
+            text-decoration: underline;
+        }
+
+        
+
+        footer {
+            width: 50%;
+
+            font-weight: bold;
+            text-align: center;
+
+            margin: 50px auto;
+
+            color: rgb(75, 24, 122);
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.377);
+
+            border-radius: 10px;
+            background-color: rgb(161, 114, 206);
+        }
+
+        div#bola {
+            width: 100px;
+            height: 100px;
+            background-color: aliceblue;
+
+            border: 2px solid red;
+            border-radius: 50%;
+
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>O Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tempora dolorem nisi! Laudantium voluptatibus cumque iure necessitatibus harum quisquam aspernatur atque praesentium. Consequuntur rem perferendis ratione repudiandae tempore sapiente mollitia?</p>
+            </article>
+                
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid sunt cumque quo! Libero consequuntur beatae eos nam deserunt quam quidem, voluptatum quos nesciunt architecto eveniet, error placeat, atque quisquam corporis?</p>
+            </article>
+        </section>
+
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tempora dolorem nisi! Laudantium voluptatibus cumque iure necessitatibus harum quisquam aspernatur atque praesentium. Consequuntur rem perferendis ratione repudiandae tempore sapiente mollitia?</p>
+                <aside>
+                    <p><cite>Artigo escrito por José da Silve</cite></p>
+                </aside>
+            </article>
+                
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid sunt cumque quo! Libero consequuntur beatae eos nam deserunt quam quidem, voluptatum quos nesciunt architecto eveniet, error placeat, atque quisquam corporis?</p>
+            </article>
+        </section>
+
+        <div id="bola"></div>
+    </main>
+
+    <footer>
+        <p>Desenvolvido pelo CurdoemVideo</p>
+    </footer>
+</body>
+</html>

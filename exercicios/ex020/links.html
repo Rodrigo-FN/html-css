@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+    <title>Links</title>
+    
+    <style>
+
+        /* SELETORES PERDONALIZADOS
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = children
+        */
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       
+        body {
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aquamarine;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(67, 67, 165);
+            margin: 50px 10px 0px;
+
+            border-radius: 10px;
+        }
+
+        div {
+            margin: 10px 10px;
+            padding: 10px;
+            background-color: royalblue;
+            border-radius: 10px;
+        }
+
+        h1 {
+
+            display: block;
+            text-align: center;
+            margin: 20px;
+
+            border-radius: 10px;
+            background-color: azure;
+            color: rgb(145, 134, 134);
+
+            text-shadow: 2px 2px 5px;
+        }
+
+        a { 
+            background-color: antiquewhite;
+            text-align: center;
+            display:block;
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 20px;
+            padding: 5px;
+
+            border-radius: 10px;
+            
+        }
+
+        a:visited {
+            color: blueviolet;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellowgreen;
+        }
+
+        a::after {
+            content: ' [Link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: black;
+        }
+
+        .especial::before {
+            content: ' ➡ ';
+        }
+
+        .especial::after {
+            content: ' ⇦';
+
+            color: blueviolet;
+        }
+
+        footer {
+            
+            display: flex;
+            flex-direction: column;
+
+            font-weight: bold;
+            text-align: center;
+            margin: 20px 10px;
+            padding: 10px;
+            border-radius: 10px;
+
+
+            align-items: center;
+
+            background-color: royalblue;
+            color: rgb(199, 183, 183);
+            text-decoration: underline;
+
+            text-transform: uppercase;
+
+            text-shadow: 2px 2px 15px;
+
+        }
+
+        footer img {
+
+            display: block;
+            height: 20%;
+            width: 20%;
+
+            margin-top: 20px;
+            border-radius: 10px;
+
+   
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Personalizando Links</h1>
+        <ul>
+            <li><a href="https://github.com/Rodrigo-FN" target="_blank">Repositório GitHub</a></li>
+            <li><a href="https://www.youtube.com/channel/UCMM-inu1cLxCucJAQBSawNg" target="_blank" class="especial">Canal do YouTube</a></li>
+            <li><a href="https://www.youtube.com/@CursoemVideo" target="_blank">Site do CursoemVideo</a></li>
+        </ul>
+
+        <div>
+            <a href="./exemple.html" rel="before">Volte ao  Exemplo!</a>
+        </div>
+    
+    </main>
+
+    <footer>
+        Rodapé
+
+        <img src="./image/raposa.jpg" alt="">
+    </footer>
+  
+</body>
+</html>

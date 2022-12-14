@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplismente aumente e diminua o tamanha do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="./image/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="./image/foto-m.png" type="image/png">
+        <img src="./image/foto-g.png" alt="Imagem fléxivel">
+    </picture>
+
+    <h1>Reproduzindo áudios em HTML5</h1>
+    <p>Vamos aprender a rebroduzir áudio em HTML5.</p>
+
+    <audio src="./midia/WhatsApp Audio 2022-07-15 at 21.41.18.mpeg" controls ></audio>
+    <!-- conpatível com MP3  WAV  OGG -->
+
+    <audio preload="metadata" controls loop>
+        <source src="./midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="./midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="./midia/guanacast-33.wav" type="audio/wav"> <!--Evitar sempre wav-->
+        <p>Infelismente seu navegador não consegue reproduzir esse aúdio. <a href="./midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3!</a></p>
+    </audio>
+
+    
+</body>
+</html>
