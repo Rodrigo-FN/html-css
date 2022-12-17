@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Tabelas</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            margin: 10px;
+            font-size: 1.3;
+            font-weight: bold;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        div.container{
+            overflow-x: auto;
+        }
+
+        .cgrupo {
+            background-color: aqua;
+        }
+
+        .cgrupo2 {
+            background-color: blueviolet;
+        }
+
+        .cgrupo3 {
+            background-color: brown;
+        }
+
+        .cdez {
+            background-color: chartreuse;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Teste tabela</h1>
+    
+    <div class="container">
+        
+        <table>
+            <colgroup>
+                <col class="cgrupo" span="5">
+                <col class="cgrupo2" span="3">
+                <col class="cgrupo3" span="3">
+                <col class="cdez">
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <caption>
+                Rendimento de Frutas
+            </caption>
+            <tr>
+                <th scope="col">Frutas</th>
+                <th scope="col">Fev</th>
+                <th scope="col">Mar</th>
+                <th scope="col">Abr</th>
+                <th scope="col">Mai</th>
+                <th scope="col">Jun</th>
+                <th scope="col">Jul</th>
+                <th scope="col">Ago</th>
+                <th scope="col">Set</th>
+                <th scope="col">Out</th>
+                <th scope="col">Nov</th>
+                <th scope="col">Dez</th>
+            </tr>
+            <tr>
+                <th scope="row">Maçã</th>
+                <td>100</td>
+                <td>200</td>
+                <td>520</td>
+                <td>4798</td>
+                <td>8977</td>
+                <td>87</td>
+                <td>897</td>
+                <td>985</td>
+                <td>98</td>
+                <td>649</td>
+                <td>654</td>
+            </tr>
+            <tr>
+                <th scope="row">Laranja</th>
+                <td>100</td>
+                <td>200</td>
+                <td>520</td>
+                <td>4798</td>
+                <td>8977</td>
+                <td>87</td>
+                <td>897</td>
+                <td>985</td>
+                <td>98</td>
+                <td>649</td>
+                <td>654</td>
+            </tr>
+            <tr>
+                <th scope="row">Mamão</th>
+                <td>100</td>
+                <td>200</td>
+                <td>520</td>
+                <td>4798</td>
+                <td>8977</td>
+                <td>87</td>
+                <td>897</td>
+                <td>985</td>
+                <td>98</td>
+                <td>649</td>
+                <td>654</td>
+            </tr>
+            <tr>
+                <th scope="row">Pera</th>
+                <td>100</td>
+                <td>200</td>
+                <td>520</td>
+                <td>4798</td>
+                <td>8977</td>
+                <td>87</td>
+                <td>897</td>
+                <td>985</td>
+                <td>98</td>
+                <td>649</td>
+                <td>654</td>
+            </tr>
+            <tr>
+                <th scope="row">Banana</th>
+                <td>100</td>
+                <td>200</td>
+                <td>520</td>
+                <td>4798</td>
+                <td>8977</td>
+                <td>87</td>
+                <td>897</td>
+                <td>985</td>
+                <td>98</td>
+                <td>649</td>
+                <td>654</td>
+            </tr>
+            <tr>
+                <th scope="row">Uva</th>
+                <td>100</td>
+                <td>200</td>
+                <td>520</td>
+                <td>4798</td>
+                <td>8977</td>
+                <td>87</td>
+                <td>897</td>
+                <td>985</td>
+                <td>98</td>
+                <td>649</td>
+                <td>654</td>
+            </tr>
+            <tr>
+                <th scope="row">Melancia</th>
+                <td>100</td>
+                <td>200</td>
+                <td>520</td>
+                <td>4798</td>
+                <td>8977</td>
+                <td>87</td>
+                <td>897</td>
+                <td>985</td>
+                <td>98</td>
+                <td>649</td>
+                <td>654</td>
+            </tr>
+            <tr>
+                <th scope="row">Melão</th>
+                <td>100</td>
+                <td>200</td>
+                <td>520</td>
+                <td>4798</td>
+                <td>8977</td>
+                <td>87</td>
+                <td>897</td>
+                <td>985</td>
+                <td>98</td>
+                <td>649</td>
+                <td>654</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
