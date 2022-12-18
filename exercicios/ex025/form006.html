@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste formulário</h1>
+    <form action="cadastro.php" method="post">
+        <div>
+            <label for="icor">Cor:</label>
+            <input type="color" name="icor" id="icor" value="#00ff00">
+        </div>
+
+        <div>
+            <label for="ran">Volume:</label>
+            <input type="range" name="ran" id="ran" min="1" max="5" step="0.5">
+        </div>
+
+        <div>
+            <label for="foto">Foto de perfil:</label>
+            <input type="file" name="foto" id="foto"> <!--Quando usar arquivo de envio, usar method "post"-->
+        </div>
+    </form>
+</body>
+</html>
